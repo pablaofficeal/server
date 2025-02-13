@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/admin/static/css/index.css">
+    <link rel="stylesheet" href="/admin/static/css/statistics.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+        </ul>
+    </nav>
+    <div class="traffic-block">
+        <h3>Статистика трафика</h3>
+        <p><strong>Отправлено:</strong> <span id="bytes-sent">0</span> байт</p>
+        <p><strong>Получено:</strong> <span id="bytes-recv">0</span> байт</p>
+        <p><strong>Отправленных пакетов:</strong> <span id="packets-sent">0</span></p>
+        <p><strong>Полученных пакетов:</strong> <span id="packets-recv">0</span></p>
+    </div>
+
+    <button>Запросыть даные</button>
+
+    <button>Запросыть даные для потверждения</button>
+    <script src="/admin/static/js/button.js"></script>
+    <script src="/admin/static/js/trafik.js"></script>
+</body>
+</html>
